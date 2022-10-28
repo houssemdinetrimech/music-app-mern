@@ -1,0 +1,52 @@
+{
+  "name": "dj-sam",
+  "version": "1.0.0",
+  "description": "online music player",
+  "main": "server.js",
+  "engines": {
+    "node": "18.7.0",
+    "npm": "8.19.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "start": "node server.js",
+    "build": " npm run build",
+    "server": "nodemon server.js",
+    "dev": "MUSIC APP TEST 3 \"node server.js\" \"nodemon server.js \"",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "author": "dj-samem",
+  "license": "HDT",
+  "dependencies": {
+    "@admin-bro/express": "^3.0.1",
+    "@admin-bro/mongoose": "^1.0.2",
+    "admin-bro": "^3.4.0",
+    "admin-bro-expressjs": "^2.1.1",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "engine": "^1.0.0",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.1",
+    "http-errors": "^1.8.0",
+    "mongodb": "^4.11.0",
+    "mongoose": "^5.10.11",
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7",
+    "react-router-dom": "^6.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dj-samemdinetrimech/dj-sam-music-.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/dj-samemdinetrimech/dj-sam-music-/issues"
+  },
+  "homepage": "https://github.com/dj-samemdinetrimech/dj-sam-music-#readme"
+}
